@@ -1,0 +1,8 @@
+services:
+  streamlit:
+    ports:
+      - 8080:80
+
+networks:
+  traefik-public:
+    external: false
