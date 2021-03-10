@@ -24,3 +24,17 @@ Then you can run the web app with:
 ```bash
 streamlit run app.py
 ```
+
+# Using Docker with traefik
+
+The configuration uses https redirect and certificats from lets encrypt.
+Since the configuration also uses localhost, lets encrypt wont be able to get the certificats.
+You'd need to change localhost to your public domain name.
+
+For the Dashboard use before running the compose:
+
+```bash
+export LOGINNAME=admin
+export PASSWORD=changethis
+export HASHED_PASSWORD=$(openssl passwd -apr1 $PASSWORD)
+```
