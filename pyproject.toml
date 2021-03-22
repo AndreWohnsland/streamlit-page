@@ -6,7 +6,7 @@ authors = ["Andre Wohnsland <Andre_Wohnsland@web.de>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-streamlit = "^0.76.0"
+streamlit = "^0.79.0"
 pandas = "^1.2.2"
 numpy = "^1.20.1"
 plotly-express = "^0.4.1"
