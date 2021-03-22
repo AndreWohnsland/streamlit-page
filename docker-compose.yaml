@@ -10,6 +10,7 @@ services:
       - traefik.http.routers.streamlit-http.entrypoints=http
       - traefik.http.routers.streamlit-http.rule=Host(`streamlit.localhost`)
       - traefik.docker.network=traefik-public
+      - traefik.http.routers.streamlit-http.middlewares=admin-auth
       # https
       # - traefik.http.routers.streamlit-https.entrypoints=https
       # - traefik.http.routers.streamlit-https.rule=Host(`streamlit.localhost`)
